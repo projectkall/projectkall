@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  color: var(--black-3);
+  font-size: 1.2rem;
+}
+
+.mypage_main {
+  width: 1400px;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+nav.navi_left {
+  width: 200px;
+  margin-left: 0;
+  position: fixed;
+  left: 10%;
+  padding: 10px;
+}
+
+.navi_left ul,
+.navi_left span a {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 15px;
+}
+
+.navi_left a {
+  color: black;
+  font-size: 1.0rem;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm네비게이션 */
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm마이페이지 */
+/* 상단메뉴 */
+
+.mypage {
+  width: 80%;
+}
+
+.mypage_profile {
+  border: solid 10px #adcdff;
+  height: 348px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mypage_profile a {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: black;
+}
+
+/* 중단메뉴 */
+
+.mypage_orderlist {
+  border: solid 10px #adcdff;
+  height: 348px;
+  display: grid;
+  grid-template-rows: 60px 288px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mypage_orderlist>span {
+  grid-row: 1/ 1;
+  grid-column: 1/ 5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  background-color: #adcdff;
+  color: white;
+}
+
+.mypage_orderlist a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mypage_orderlist a,
+.mypage_orderlist a>span {
+  color: black;
+  font-weight: 900;
+}
+
+.mypage_orderlist i {
+  margin-bottom: 10px;
+}
+
+/* 하단메뉴 */
+
+
+.mypage_menu {
+  border: solid 10px #adcdff;
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  /* border: solid 1px; */
+  height: 464px;
+}
+
+.mypage_menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.mypage_menu i {
+  color: #adcdff;
+}
+
+.mypage_menu a {
+  color: black;
+  font-weight: 900;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmm마이페이지 */
+
+
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmHOVER */
+/* mmmmmmmmmmmmmmmmm나중엔 자바스크립트로 하기 */
+.mypage_orderlist a:hover,
+.mypage_menu a:hover {
+  color: #3897f5;
+}
+
+.navi_left a:hover {
+  font-weight: 900;
+}
+
+.DJ_naviHidden {
+  display: none;
+}
